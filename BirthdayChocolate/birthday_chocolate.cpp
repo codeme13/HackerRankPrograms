@@ -27,7 +27,7 @@ int getWays(vector < int > squares, int d, int m){
 int main() {
     int n , ele;
     cin >> n;    
-    vector<int> s;
+    vector<int> s;// we can use array also without use of function
 
     for(int s_i = 0; s_i < n ; s_i++){
        cin >> ele;
@@ -36,7 +36,8 @@ int main() {
     int d;
     int m;
     cin >> d >> m;
-    int result = getWays(s, d, m);
+    //taking input from the user
+    int result = getWays(s, d, m);//calling function
     cout<<result<<endl;
     return 0;
 }
